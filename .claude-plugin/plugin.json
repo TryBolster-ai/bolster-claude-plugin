@@ -16,5 +16,6 @@
     "mcp"
   ],
   "privacyPolicyUrl": "https://www.bolsterbuilt.com/privacy-policy/",
-  "icon": ".claude-plugin/icon.png"
+  "icon": ".claude-plugin/icon.png",
+  "license": "Apache-2.0"
 }
