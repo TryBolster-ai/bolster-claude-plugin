@@ -1,0 +1,20 @@
+{
+  "name": "bolster",
+  "version": "0.1.0",
+  "description": "Bolster for construction businesses: AI estimates, jobs, customers, bills, vendor orders, bid requests, the schedule, time, lead forms and job costing, worked from Claude as you.",
+  "author": {
+    "name": "Bolster",
+    "url": "https://www.bolsterbuilt.com"
+  },
+  "homepage": "https://www.bolsterbuilt.com/learn/connect-bolster-to-claude-and-chatgpt/",
+  "keywords": [
+    "construction",
+    "estimating",
+    "contractors",
+    "job costing",
+    "scheduling",
+    "mcp"
+  ],
+  "privacyPolicyUrl": "https://www.bolsterbuilt.com/privacy-policy/",
+  "icon": ".claude-plugin/icon.png"
+}

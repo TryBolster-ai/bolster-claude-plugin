@@ -1,0 +1,15 @@
+{
+  "name": "bolster-tools",
+  "owner": {
+    "name": "Bolster",
+    "url": "https://www.bolsterbuilt.com"
+  },
+  "plugins": [
+    {
+      "name": "bolster",
+      "source": "./",
+      "description": "Bolster's MCP server and skills for estimating, job costing, bills and scheduling."
+    }
+  ],
+  "description": "Bolster's plugin for Claude: estimating, job costing, bills and scheduling from your Bolster account."
+}
