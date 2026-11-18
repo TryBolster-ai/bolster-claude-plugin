@@ -8,7 +8,7 @@ Quick reference for all system dimension codes used in construction estimating e
 - Dimensions can inherit from parent (`inherit: 1`) or be computed via equations
 - Unit conversion is automatic — do NOT manually convert units in equations
 - 14 built-in dimensions are always available
-- 350+ trade-specific dimensions are loaded from the database at runtime (company_id: null, dimension_order < 9000)
+- 350+ trade-specific dimensions are available to every company
 
 ## Quick lookup — most common dimensions
 

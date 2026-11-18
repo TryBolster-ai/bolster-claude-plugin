@@ -32,4 +32,4 @@ Examples:
 - Times are unix seconds (`quote_time_created`, `invoice_time_due`…). Work out the number from the date first.
 - Money fields are numbers: `quote_price_gross` ">=10000".
 - To count, page through with a small `fields` list; there is no count tool.
-- Lead sources can't be filtered by name in PHP; a keyword query on them is matched on the name.
+- Lead sources can't be filtered by name; a keyword query on them is matched on the name.
