@@ -1,0 +1,99 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "bolster",
+  "version": "0.1.0",
+  "description": "Bolster for construction businesses: AI estimates, jobs, customers, bills, vendor orders, bid requests, the schedule, time, lead forms and job costing, worked from ChatGPT as you.",
+  "author": {
+    "name": "Bolster",
+    "email": "support@bolsterbuilt.com",
+    "url": "https://www.bolsterbuilt.com"
+  },
+  "homepage": "https://www.bolsterbuilt.com",
+  "repository": "https://github.com/TryBolster-ai/bolster-claude-plugin",
+  "license": "Apache-2.0",
+  "keywords": ["construction", "estimating", "contractors", "job costing", "scheduling"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Bolster",
+        "shortDescription": "Construction estimates & jobs",
+        "longDescription": "Bolster is estimating and job management software for contractors and remodelers. Connect your Bolster account to work it from ChatGPT, as yourself and with your own permissions.\n\nWhat you can do:\n- Build a priced estimate with Bolster's AI estimator from a description of the work, site photos, plans or an existing quote.\n- Find and edit jobs, customers, invoices, tasks, vendors and catalog items. Change a job's lines, quantities and prices, with every total recalculated by Bolster.\n- Enter receipts and vendor bills from a photo or PDF, costed to the right job.\n- See how a job is tracking against its budget, and which jobs are over.\n- See and adjust the schedule, assign crews and vendors, and log time.\n- Create vendor orders and bid requests, and review the bids.\n- Manage lead forms and see where leads come from.\n\nWho it is for: contractors, builders and remodelers who run their business in Bolster, and homeowners who want to see their own projects.\n\nLimits: it needs a Bolster account. It only reaches the companies you choose when you connect, and only what your role in each company allows. AI estimates and Smart Build-out use your company's Bolster AI credits. Nothing is sent to a customer unless you ask for it.",
+        "developerName": "Bolster",
+        "category": "Productivity",
+        "capabilities": [
+          "Build priced estimates from descriptions, photos and plans",
+          "Find and edit jobs, customers and catalog items",
+          "Enter receipts and vendor bills",
+          "Report job costing against budget",
+          "View and adjust the schedule",
+          "Create vendor orders and bid requests"
+        ],
+        "websiteURL": "https://www.bolsterbuilt.com",
+        "supportURL": "https://www.bolsterbuilt.com/contact-us",
+        "privacyPolicyURL": "https://www.bolsterbuilt.com/privacy-policy/",
+        "termsOfServiceURL": "https://www.bolsterbuilt.com/terms-and-conditions/",
+        "defaultPrompt": [
+          "Estimate a 12 by 14 foot composite deck for a new job",
+          "What is on the schedule this week?",
+          "Which of my jobs are over budget?"
+        ],
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/logo.png"
+      },
+      "review": {
+        "test_cases": {
+          "positive": [
+            {
+              "description": "Start an AI estimate from a description",
+              "prompt": "Estimate a 12 by 14 foot composite deck with stairs and a railing for a new job called Review Deck.",
+              "tools_triggered": "start_estimate, estimate_status",
+              "expected_behavior": "Starts an estimate in prompt mode and reports progress. When it is ready, it reports the new job with its total, item count and customer options."
+            },
+            {
+              "description": "Find jobs by status",
+              "prompt": "Which of my jobs are still pending?",
+              "tools_triggered": "search",
+              "expected_behavior": "Lists the company's pending jobs with names, customers and totals, without inventing any."
+            },
+            {
+              "description": "Read a job and change a quantity",
+              "prompt": "Open the Review Deck job and change the deck boards to 200 square feet.",
+              "tools_triggered": "search, get_job, set_item_quantity",
+              "expected_behavior": "Finds the job, changes that item's quantity and reports the job's recalculated total."
+            },
+            {
+              "description": "Job costing",
+              "prompt": "How is the Review Deck job tracking against its budget?",
+              "tools_triggered": "search, job_costing",
+              "expected_behavior": "Reports budget, committed, actual and projected cost and margin for that job."
+            },
+            {
+              "description": "Schedule for the week",
+              "prompt": "What is on the schedule this week, and who is assigned?",
+              "tools_triggered": "get_schedule",
+              "expected_behavior": "Lists this week's scheduled work by day with the assigned crew or vendor, or says the week is empty."
+            }
+          ],
+          "negative": [
+            {
+              "description": "Unrelated travel request; Bolster has no travel tools, so it should not be called",
+              "prompt": "Book me a flight to Denver next Tuesday."
+            },
+            {
+              "description": "General writing request that needs no Bolster data",
+              "prompt": "Write a short poem about building a deck."
+            },
+            {
+              "description": "Another company's data the user has not connected; the tools only reach connected companies and should report that it cannot see it",
+              "prompt": "Show me every job at a competitor's construction company."
+            }
+          ]
+        },
+        "commerce": false
+      },
+      "publication": {
+        "release_notes": "First release: AI estimates, jobs, customers, bills and receipts, vendor orders and bid requests, the schedule, time, lead forms and job costing."
+      }
+    }
+  }
+}
