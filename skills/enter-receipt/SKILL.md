@@ -1,6 +1,6 @@
 ---
-name: enter-receipt
-description: Enter a receipt or vendor bill in Bolster from a photo or PDF, costed to the right job and item. Use when the user shares a receipt or bill, or asks to log an expense in Bolster.
+name: "enter-receipt"
+description: "Enter a receipt or vendor bill in Bolster from a photo or PDF, costed to the right job and item. Use when the user shares a receipt or bill, or asks to log an expense in Bolster."
 ---
 
 Use the Bolster MCP tools.

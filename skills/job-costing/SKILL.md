@@ -1,6 +1,6 @@
 ---
-name: job-costing
-description: Report how a Bolster job is doing against its budget (committed, actual, projected, margin), or which jobs are over budget. Use when the user asks how a job is tracking, about job profit or margin, or about cost overruns.
+name: "job-costing"
+description: "Report how a Bolster job is doing against its budget (committed, actual, projected, margin), or which jobs are over budget. Use when the user asks how a job is tracking, about job profit or margin, or about cost overruns."
 ---
 
 Use the Bolster MCP tools.

@@ -1,6 +1,6 @@
 ---
-name: setup-account
-description: Set up a new company's Bolster account from its own documents with Smart Build-out (markup, payment terms, terms and conditions, logo and theme, tax and labor rates, company details, a catalog, an assembly and an example job). Use when the user is new to Bolster, says they just signed up, or asks to set up, onboard, configure or import their company, catalog or price list.
+name: "setup-account"
+description: "Set up a new company's Bolster account from its own documents with Smart Build-out (markup, payment terms, terms and conditions, logo and theme, tax and labor rates, company details, a catalog, an assembly and an example job). Use when the user is new to Bolster, says they just signed up, or asks to set up, onboard, configure or import their company, catalog or price list."
 ---
 
 Use the Bolster MCP tools.

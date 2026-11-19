@@ -1,6 +1,6 @@
 ---
-name: estimate-job
-description: Build a priced Bolster estimate with Bolster's AI estimator from a description of the work, site photos, plans or drawings, or an existing quote or itemised document to recreate. Use whenever the user asks to quote, estimate, price or create a job for some work (a deck, a reroof, a pool, a kitchen), for one customer or several.
+name: "estimate-job"
+description: "Build a priced Bolster estimate with Bolster's AI estimator from a description of the work, site photos, plans or drawings, or an existing quote or itemised document to recreate. Use whenever the user asks to quote, estimate, price or create a job for some work (a deck, a reroof, a pool, a kitchen), for one customer or several."
 ---
 
 Use the Bolster MCP tools.

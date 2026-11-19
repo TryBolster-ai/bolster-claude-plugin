@@ -1,6 +1,6 @@
 ---
-name: schedule-week
-description: Show and adjust the Bolster schedule: what is on this week, move work, put a job on the schedule, assign crews or vendors. Use when the user asks about the schedule, who is working where, or to move or assign work.
+name: "schedule-week"
+description: "Show and adjust the Bolster schedule: what is on this week, move work, put a job on the schedule, assign crews or vendors. Use when the user asks about the schedule, who is working where, or to move or assign work."
 ---
 
 Use the Bolster MCP tools.

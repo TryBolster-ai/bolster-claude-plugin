@@ -1,6 +1,6 @@
 ---
-name: find-records
-description: Find Bolster records precisely - jobs, customers, invoices, tasks, vendors, vendor orders, files, catalog items, assemblies, lead sources - with Bolster's filter syntax (status codes, number ranges, dates, text matches, sorting, paging). Use whenever the user asks to find, list, count or look up anything in Bolster.
+name: "find-records"
+description: "Find Bolster records precisely - jobs, customers, invoices, tasks, vendors, vendor orders, files, catalog items, assemblies, lead sources - with Bolster's filter syntax (status codes, number ranges, dates, text matches, sorting, paging). Use whenever the user asks to find, list, count or look up anything in Bolster."
 ---
 
 Use the Bolster MCP `search` tool, then `fetch` (or `get_job`) for the full record. The syntax and rules are Bolster's own: [../edit-job/references/filtering.md](../edit-job/references/filtering.md).

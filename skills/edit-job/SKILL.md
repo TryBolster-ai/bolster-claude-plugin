@@ -1,6 +1,6 @@
 ---
-name: edit-job
-description: Change a Bolster job the way Bolton's editor does - rename, add, remove, move, duplicate, group, change quantities, costs, prices, markup, optional or included flags, or any change across many lines - with every total recalculated by Bolster's audit. Use for any edit to a job's items or assemblies.
+name: "edit-job"
+description: "Change a Bolster job the way Bolton's editor does - rename, add, remove, move, duplicate, group, change quantities, costs, prices, markup, optional or included flags, or any change across many lines - with every total recalculated by Bolster's audit. Use for any edit to a job's items or assemblies."
 ---
 
 Use the Bolster MCP tools. You are doing what Bolton's sidebar editor and script writer do inside the app, over MCP. The rules are the same; the references in this skill are Bolton's own, generated from the same sources.
